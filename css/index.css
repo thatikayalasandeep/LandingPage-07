@@ -29,6 +29,32 @@ nav:first-child{
     font-weight: bolder;
     color: tomato;
 }
+/* ---Nav section Media query for mobile response */
+@media screen and (max-width: 500px){
+    nav{
+        flex-direction: space-between;
+        justify-content: center;
+        align-items: flex-start;
+        column-gap: 30px;
+    }
+    .nav-items{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 0;
+    }
+    nav img:first-of-type{
+        width: 120px;
+        height: auto;
+        margin-left: 0;
+    }
+    nav img:last-of-type{
+       width: 180px;
+       height: auto;
+
+    }
+
+}
 .intro-section{
     display: flex;
     flex-direction: row;
@@ -56,6 +82,10 @@ h1{
     /* position: absolute;
     top: 100px; */
 }
+.sub-headlines{
+    margin-left: 80px;
+    margin-bottom: 50px;
+}
 .sub-headlines > h5{
     font-family: poppins;
     font-weight: lighter;
@@ -67,10 +97,6 @@ h1{
     background-color: tomato;
     border-radius: 12px;
     padding: 4px;
-}
-.sub-headlines{
-    margin-left: 80px;
-    margin-bottom: 50px;
 }
 .text{
     font-family: poppins;
@@ -95,12 +121,51 @@ h1{
 .action-btns{
     margin-top: 8px;
 }
+/* ---intro-rightSection Media query for mobile response */
+
+@media screen and (max-width: 500px) {
+    .left-section{
+        margin-top: 30px;
+    }
+    .left-section h3{
+        font-size: 25px;
+        margin-left: 10px;
+    }
+    .left-section h1{
+        font-weight: 200;
+        font-size:30px;
+        margin-left: 10px;
+    }
+    .sub-headlines{
+        margin-left: 10px;
+        margin-bottom: 30px;
+    }
+    .sub-headlines > h5{
+        font-size: 18px;
+    }
+    .sub-headlines img{
+        width: 10px;
+    }
+    .text{
+        font-size: 12px;
+        margin-left: 10px;
+       width: 80%;
+    }
+    .action-btn{
+        padding: 8px 20px;
+        margin-left:30px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+
+
+}
 .dot{
     height: 20px;
     width: 20px;
     border-radius: 14px;
     padding: 2px;
-/* background-color: red; */
 }
 .dots{
     display: flex;
@@ -151,94 +216,59 @@ img[src="./images/headphones.jpg"]{
     z-index: -1;
 }
 
-/* ----- Writing Media queries for mobile response ----- */
-@media screen and (max-width: 600px) {
-    body{
-        width: 100%;
-        height: 100%;
-        overflow-x: hidden;
-    }
-    nav{
-        margin-top: 10px;
-        justify-content: space-between;
-        align-items: flex-start;
+/* ---intro-leftSection Media query for mobile response */
 
-    }
-    nav img{
-        width: 80px;
-        height: auto;
-    }
-    .nav-items{
-        flex-direction: column;
-        justify-content: center;
-        gap: 10px;
-        margin-left: 80px;
-      
-    }
-    .nav-item{
-        font-size: 15px;
-    }
-    nav img:last-child{
-       height: 40px;
-       width: auto;
-       margin-left: 8px;
-    }
+@media screen and (max-width: 500px) {
     .intro-section{
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
-        margin-top: 0;
-        margin-left: 0;
-    
+        margin-top: 80px;
+        margin-left: 25px;
     }
     .right-section{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: right;
         align-items: center;
     }
-    .headphone-div img:last-child{
-        top: 120px;
-        width: 390px;
+    .headphone-div img:last-of-type{
+        width: 220px;
         height: auto;
-        margin-right: -130px;
+        top: 120px;
+        left: 120px;
     }
     .discount{
-        top: 240px;
-        width: 120px;
+        margin-top: 70px;
+        width: 90px;
         height: auto;
-        right: 260px;
+        right: 240px;
     }
     .discount-content{
-        top: 420px;
-        right: 270px;
+        top: 320px;
+        right: 255px;
+        font-size: 11px;
+        line-height: 15px;
+    }
+    .discount-content h1{
+       font-size: 20px;
+    }
+    .dot{
+        height: 15px;
+        width: 15px;
+        border-radius: 14px;
+        padding: 2px;
+        align-items: center;
     }
     .dots{
-        margin-top: 450px;
-        margin-right: 30px;
-        margin-bottom: 0;
+        gap: 10px;
+        margin-top: 230px;
+        margin-right: 50px;
+        margin-bottom: 6px;
     }
-    .left-section{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 40px;
+    .right-section button{
+        padding: 10px 17px;
+        margin-right:50px;
+        margin-top: 20px;
     }
-    h1{
-        font-weight: 500;
-        font-size:40px;
-        margin: 7px;
-    }
-    .text{
-       margin-left: 330px;
-        width: 50%;
-        text-align: center;
-    }
-    .action-btns{
-        margin-bottom: 20px;
-    }
-
-    
-    
 }
