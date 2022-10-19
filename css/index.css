@@ -17,7 +17,7 @@ nav{
     gap: 60px;
 }
 nav:first-child{
-    margin-left: 20px;
+    margin-left: 30px;
 }
 .nav-item{
     font-family: "Poppins";
@@ -32,7 +32,7 @@ nav:first-child{
 /* ---Nav section Media query for mobile response */
 @media screen and (max-width: 500px){
     nav{
-        flex-direction: space-between;
+        flex-direction: space-around;
         justify-content: center;
         align-items: flex-start;
         column-gap: 30px;
@@ -151,9 +151,16 @@ h1{
         margin-left: 10px;
        width: 80%;
     }
+    .action-btns{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 15px;
+        
+    }
     .action-btn{
         padding: 8px 20px;
-        margin-left:30px;
+        margin-left:10px;
         margin-top: 20px;
         margin-bottom: 30px;
     }
